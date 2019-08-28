@@ -1,15 +1,20 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { HoomeComponent } from './main/hoome/hoome.component';
 
-import { HomeComponent } from '@src/app/home/home.component';
 
 export const routes: Routes = [
-  {
-      path: '',
-      redirectTo: '/home',
-      pathMatch: 'full',
-  },
-  {
-      path: 'home',
-      component: HomeComponent,
-  },
+	{
+		path: '',
+		redirectTo: 'hoomeapp',
+		pathMatch: 'full',
+	},
+	{
+		path: 'home',
+		component: HomeComponent,
+	},
+	{
+		path: 'hoomeapp',
+		component: HoomeComponent
+	}
 ];
